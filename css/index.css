@@ -122,8 +122,13 @@ nav .home {
 nav .home:hover {
   font-weight: normal;
 }
+nav .about {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  height: 1.2rem;
+  padding: 0.5%;
+}
 .bgpicture {
-  border: 2px dotted lime;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,7 +136,6 @@ nav .home:hover {
   height: 50vh;
 }
 .bgpicture .title-container {
-  border: 1px solid hotpink;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -162,5 +166,5 @@ nav .home:hover {
 }
 .bgpicture .title-container button:hover {
   background-color: whitesmoke;
-  box-shadow: 2px 2px 1px slategray;
+  box-shadow: 2px 2px 1px darkslategrey;
 }
