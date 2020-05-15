@@ -228,7 +228,6 @@ console.log(artists[8].name);
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(id, name) {
-    /* code here */
     for (let i = 0; i < artists.length; i++){
       if (i === id)
     return `The artist at index ${artists[i].id} is ${artists[i].name}.`
@@ -247,10 +246,12 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
+function removeArtist(num) {
     /* code here */
-  }
-  
+    let id = artists.splice(1,1);
+}
+  console.log(removeArtist(0));
+//// cannot seem to figure out what i need to do here. need to commit push anyway because i ran out of time. 
   /**
 
 
