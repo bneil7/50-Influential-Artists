@@ -25,10 +25,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. How would you describe preprocessing to someone new to CSS?
+// 
+// Preprocessing is basically CSS but written in more concise syntax, with more tools implemented to increase functionality and developer usability. These tools help keep related data together, minimizing the probability for mistakes and lessening the margin for error. "LESS" is the name of this simplified format/syntax of the CSS language and performs on the same principles. (By "simplified" I mean, it's a more concise and condensed version of the CSS language.)  // 
+//
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+// 
+// So far I like the idea of @import, and being able to keep all the different sections of styling in different folders/directories. I also like Mixins, but I've had trouble applying it into practice and using them efficiently. I understand the concept, but I need to play around with it more and see its effects in order to be able to retain the information. //
+//
 3. How would you explain the concept of a variable to someone new to programming?
+// 
+// Variables are used to store data, and the data they store is determined by us, the programmers. We assign value to these variables so we can reference them and call on the data they contain at different iterations and points in time throughout building our code. //
+// 
 4. What is the purpose of using functions in code?
+// // Functions are like small computer programs, that perform actions based on the instructions we give them. One function can contain a set of data that tells a computer what to do when that function is run, which makes it more practical to build multiple functions that perform specific tasks; so when we run the computer program as a whole, we can plug in each function that we've built and determine when the computer reads the function based on what task we are telling it to perform. //
+//
 5. What is a JSON data?
+// // JavaScript Object Notation is a method of transferring and formatting data between different languages. It is utilized in the communication between servers and web applications using human-readable text. //
+//
 
 You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
