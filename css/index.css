@@ -43,6 +43,50 @@
   font-size: 0.8rem;
   text-align: center;
 }
+.artists-phoneview {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+  margin: 0;
+}
+.artists-phoneview .artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 350px;
+}
+.artists-phoneview .artist img {
+  height: 175px;
+  width: 225px;
+  border-radius: 7px;
+  margin: 10px;
+}
+.artists-phoneview .artist a {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  margin-bottom: 5%;
+}
+.artists-phoneview .artist a:hover {
+  color: darkslategrey;
+}
+.artists-phoneview .artist .bio {
+  width: 100%;
+  height: 30%;
+  font-size: 0.6rem;
+  text-align: center;
+  margin-bottom: 5%;
+}
 html,
 body,
 div,
@@ -235,6 +279,17 @@ nav .about {
   background-color: whitesmoke;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
+@media (max-width: 500px) {
+  .bgpicture {
+    align-items: flex-start;
+    height: 300px;
+  }
+  .bgpicture .title-container {
+    width: 100%;
+    height: 95%;
+    background-size: 800px 400px;
+  }
+}
 .artists-container {
   display: flex;
   justify-content: center;
@@ -242,7 +297,7 @@ nav .about {
   border-top: 2px solid lightgray;
   height: 50vh;
 }
-.artists-container .artist.vince {
+.artists-container .artist {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,13 +305,13 @@ nav .about {
   width: 50%;
   height: 350px;
 }
-.artists-container .artist.vince img {
+.artists-container .artist img {
   height: 200px;
   width: 275px;
   border-radius: 7px;
   margin: 10px;
 }
-.artists-container .artist.vince a {
+.artists-container .artist a {
   width: 100%;
   height: auto;
   display: flex;
@@ -266,45 +321,58 @@ nav .about {
   color: black;
   font-size: 1.2rem;
 }
-.artists-container .artist.vince a:hover {
+.artists-container .artist a:hover {
   color: darkslategrey;
 }
-.artists-container .artist.vince .bio {
+.artists-container .artist .bio {
   width: 90%;
   height: 20%;
   font-size: 0.8rem;
   text-align: center;
 }
-.artists-container .artist.joe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 50%;
-  height: 350px;
-}
-.artists-container .artist.joe img {
-  height: 200px;
-  width: 275px;
-  border-radius: 7px;
-  margin: 10px;
-}
-.artists-container .artist.joe a {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-}
-.artists-container .artist.joe a:hover {
-  color: darkslategrey;
-}
-.artists-container .artist.joe .bio {
-  width: 90%;
-  height: 20%;
-  font-size: 0.8rem;
-  text-align: center;
+@media (max-width: 500px) {
+  .artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+    margin: 0;
+  }
+  .artists-container .artist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 350px;
+  }
+  .artists-container .artist img {
+    height: 175px;
+    width: 225px;
+    border-radius: 7px;
+    margin: 10px;
+  }
+  .artists-container .artist a {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    margin-bottom: 5%;
+  }
+  .artists-container .artist a:hover {
+    color: darkslategrey;
+  }
+  .artists-container .artist .bio {
+    width: 100%;
+    height: 30%;
+    font-size: 0.6rem;
+    text-align: center;
+    margin-bottom: 5%;
+  }
 }

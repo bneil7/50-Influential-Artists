@@ -33,6 +33,16 @@
             .contact-btn();
         }
     }
+    @media @phone{
+          align-items: flex-start;
+          height:300px;
+
+          .title-container{
+              width:100%;
+              height:95%;
+              background-size: 800px 400px;
+          }
+    }
 }
 
 .artists-container{
@@ -43,10 +53,10 @@
     border-top: 2px solid lightgray;
     height:50vh;
 
-    .artist.vince{
+    .artist {
         .artists-img-link-bio();
     }
-    .artist.joe{
-        .artists-img-link-bio();
+    @media @phone{
+        .artists-phoneview();
     }
 }
