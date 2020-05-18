@@ -173,6 +173,28 @@ nav .about {
   height: 1.2rem;
   padding: 0.5%;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  nav a {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    height: 50%;
+    width: 9%;
+  }
+  nav .about {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    height: 1rem;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
 .bgpicture {
   display: flex;
   justify-content: center;
