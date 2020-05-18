@@ -241,17 +241,19 @@ function getArtistByIndex(id, name) {
 /* Task 4: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
- * removeArtist removes an artist from the dat array at the index.
+ * removeArtist removes an artist from the data array at the index.
  * 
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
 function removeArtist(num) {
-    /* code here */
-    let id = artists.splice(1,1);
+  let i = artists.splice(num,1);
+  return i;
 }
-  console.log(removeArtist(0));
-//// cannot seem to figure out what i need to do here. need to commit push anyway because i ran out of time. 
+console.log(removeArtist(0));
+
+// i can't tell if this is working or not, but it kind of seems like it works the way i want it to now based on the console
+
   /**
 
 
