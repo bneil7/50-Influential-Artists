@@ -227,13 +227,13 @@ console.log(artists[8]);
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
+function getArtistByIndex(id) {
     for (let i = 0; i < artists.length; i++){
       if (i === id)
     return `The artist at index ${artists[i].id} is ${artists[i].name}.`
   }
 }
-  console.log(getArtistByIndex(13, name));
+console.log(getArtistByIndex(12) + name);
   
   /**
 
@@ -252,19 +252,23 @@ function removeArtist(num) {
 }
 console.log(removeArtist(0));
 
-// i can't tell if this is working or not, but it kind of seems like it works the way i want it to now based on the console
-
   /**
 
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
-
-    /* Code here */
-
+function lotsOfArt(arr){
+  
+  const moreThan100 = [];
+  for(let i = 0; i < arr.length; i++){
+    // console.log(artists[i].paintings); 
+  if(arr[i].paintings > 100){
+    moreThan100.push(`${arr[i].name} painted ${arr[i].paintings} paintings`);
   }
-
+} 
+return (moreThan100);
+}
+console.log(lotsOfArt(artists));
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
 
@@ -275,12 +279,20 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
-
-  }
-
+function addArtist(array){
+  let brandonArtist = {
+    'id': 21,
+    'name': 'Brandon Neil', 
+    'years': '1993 - infinity',
+    'genre': 'Web Design', 
+    'nationality': 'Murican',
+    'bio': 'Brandon Lorem Neil Ipsum Brandon Lorem Neil Ipsum Brandon Lorem Neil Ipsum Brandon Lorem Neil Ipsum' 
+  };
+  return array.push(brandonArtist);
+  
+}
+console.log(addArtist(artists));
+console.log(artists);
 
 
 
