@@ -1,0 +1,62 @@
+.bgpicture{
+    // border: 2px dotted lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:500px;
+
+    .title-container{
+        // border: 1px solid hotpink;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 85%;
+        background: url('https://github.com/bneil7/50-Influential-Artists/blob/brandon-neil/assets/home.png?raw=true');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1200px 800px;
+        
+        h1{
+            // border:1px dotted lime;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: center;
+            color:white;
+            font-size: 3rem;
+            font-weight: 400;
+            width:100%;
+        }
+        button{
+            .contact-btn();
+        }
+    }
+    @media @phone{
+          align-items: flex-start;
+          height:300px;
+
+          .title-container{
+              width:100%;
+              height:95%;
+              background-size: 800px 400px;
+          }
+    }
+}
+
+.artists-container{
+    // border: 2px solid gold;
+    display: flex;
+    justify-content: center;
+    margin:0 3% 0 3%;
+    border-top: 2px solid lightgray;
+    height:50vh;
+
+    .artist {
+        .artists-img-link-bio();
+    }
+    @media @phone{
+        .artists-phoneview();
+    }
+}

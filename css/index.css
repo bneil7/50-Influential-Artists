@@ -1,4 +1,378 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+.contact-btn {
+  margin-top: 1%;
+  width: 130px;
+  height: 35px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.contact-btn:hover {
+  background-color: whitesmoke;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.artists-img-link-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 350px;
+}
+.artists-img-link-bio img {
+  height: 200px;
+  width: 275px;
+  border-radius: 7px;
+  margin: 10px;
+}
+.artists-img-link-bio a {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+.artists-img-link-bio a:hover {
+  color: darkslategrey;
+}
+.artists-img-link-bio .bio {
+  width: 90%;
+  height: 20%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.artists-phoneview {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+  margin: 0;
+}
+.artists-phoneview .artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 350px;
+}
+.artists-phoneview .artist img {
+  height: 175px;
+  width: 225px;
+  border-radius: 7px;
+  margin: 10px;
+}
+.artists-phoneview .artist a {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  margin-bottom: 5%;
+}
+.artists-phoneview .artist a:hover {
+  color: darkslategrey;
+}
+.artists-phoneview .artist .bio {
+  width: 100%;
+  height: 30%;
+  font-size: 0.6rem;
+  text-align: center;
+  margin-bottom: 5%;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+* {
+  max-width: 100%;
+}
+body {
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+nav {
+  margin-top: 2%;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 1%;
+  height: 50%;
+  width: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
+}
+nav a:hover {
+  font-weight: 600;
+}
+nav .home {
+  font-weight: 600;
+}
+nav .home:hover {
+  font-weight: normal;
+}
+nav .about {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  height: 1.2rem;
+  padding: 0.5%;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  nav a {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    height: 50%;
+    width: 9%;
+  }
+  nav .about {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    height: 1rem;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+.bgpicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+.bgpicture .title-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 85%;
+  background: url('https://github.com/bneil7/50-Influential-Artists/blob/brandon-neil/assets/home.png?raw=true');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1200px 800px;
+}
+.bgpicture .title-container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  width: 100%;
+}
+.bgpicture .title-container button {
+  margin-top: 1%;
+  width: 130px;
+  height: 35px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.bgpicture .title-container button:hover {
+  background-color: whitesmoke;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 500px) {
+  .bgpicture {
+    align-items: flex-start;
+    height: 300px;
+  }
+  .bgpicture .title-container {
+    width: 100%;
+    height: 95%;
+    background-size: 800px 400px;
+  }
+}
+.artists-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 3% 0 3%;
+  border-top: 2px solid lightgray;
+  height: 50vh;
+}
+.artists-container .artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 350px;
+}
+.artists-container .artist img {
+  height: 200px;
+  width: 275px;
+  border-radius: 7px;
+  margin: 10px;
+}
+.artists-container .artist a {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+.artists-container .artist a:hover {
+  color: darkslategrey;
+}
+.artists-container .artist .bio {
+  width: 90%;
+  height: 20%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+    margin: 0;
+  }
+  .artists-container .artist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 350px;
+  }
+  .artists-container .artist img {
+    height: 175px;
+    width: 225px;
+    border-radius: 7px;
+    margin: 10px;
+  }
+  .artists-container .artist a {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    margin-bottom: 5%;
+  }
+  .artists-container .artist a:hover {
+    color: darkslategrey;
+  }
+  .artists-container .artist .bio {
+    width: 100%;
+    height: 30%;
+    font-size: 0.6rem;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+}

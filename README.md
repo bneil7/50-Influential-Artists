@@ -25,10 +25,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. How would you describe preprocessing to someone new to CSS?
+// 
+// Preprocessing is basically CSS but written in more concise syntax, with more tools implemented to increase functionality and developer usability. These tools help keep related data together, minimizing the probability for mistakes and lessening the margin for error. "LESS" is the name of this simplified format/syntax of the CSS language and performs on the same principles. (By "simplified" I mean, it's a more concise and condensed version of the CSS language.)  // 
+//
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+// 
+// So far I like the idea of @import, and being able to keep all the different sections of styling in different folders/directories. I also like Mixins, but I've had trouble applying it into practice and using them efficiently. I understand the concept, but I need to play around with it more and see its effects in order to be able to retain the information. //
+//
 3. How would you explain the concept of a variable to someone new to programming?
+// 
+// Variables are used to store data, and the data they store is determined by us, the programmers. We assign value to these variables so we can reference them and call on the data they contain at different iterations and points in time throughout building our code. //
+// 
 4. What is the purpose of using functions in code?
+// // Functions are like small computer programs, that perform actions based on the instructions we give them. One function can contain a set of data that tells a computer what to do when that function is run, which makes it more practical to build multiple functions that perform specific tasks; so when we run the computer program as a whole, we can plug in each function that we've built and determine when the computer reads the function based on what task we are telling it to perform. //
+//
 5. What is a JSON data?
+// // JavaScript Object Notation is a method of transferring and formatting data between different languages. It is utilized in the communication between servers and web applications using human-readable text. //
+//
 
 You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -40,23 +53,23 @@ Follow these steps to set up your project:
 
 #### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your Team Lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your Team Lead as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 #### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] In your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [x] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [x] In your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [x] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
+* [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ### Task 2a:  Minimum Viable Product - PreProcessing
 
 #### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [x] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -72,15 +85,15 @@ _You will know everything is working properly when you see the styles enabled fo
 
 #### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
-* [ ] Add a viewport meta tag to the head of your index.html page.
-* [ ] [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html).
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
-* [ ] Main Content Styles: Use the `main.less` file for styling.
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins.
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `contact us` button styles.
-* [ ] Use at least 2 parameters to create your button.
-* [ ] Add responsive breakpoints to your code for 500px such that your styles match the mobile design file.
+* [x] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [x] Add a viewport meta tag to the head of your index.html page.
+* [x] [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html).
+* [x] Navigation Styles: Use the `navigation.less` file for styling.
+* [x] Main Content Styles: Use the `main.less` file for styling.
+* [x] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins.
+* [x] LESS Parametric Mixin: create a parametric mixin that is used to create the `contact us` button styles.
+* [x] Use at least 2 parameters to create your button.
+* [x] Add responsive breakpoints to your code for 500px such that your styles match the mobile design file.
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
